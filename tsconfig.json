@@ -1,3 +1,17 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@layouts/*":["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@data": ["src/data/info"],
+      "@types": ["src/types"]
+    }
+  }
 }
