@@ -5,17 +5,8 @@ import Layout from "../layouts/Layout.astro";
 import About from "../components/home/About.astro";
 ---
 
-<Layout title="Juan Realpe | portfolio">
+<Layout title="Portfolio | Juan Realpe">
 	<main>
 		<About name={info.name} about={info.about} />
 	</main>	
 </Layout>
-
-<style>
-	main {
-		width: 100%;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-	}
-</style>

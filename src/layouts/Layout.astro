@@ -19,16 +19,9 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-light dark:bg-dark font-sans">
 		<Navbar />
 		<slot />
 		<Footer />
 	</body>
 </html>
-<style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background: #01195a;
-		height: 100vh;
-}
-</style>

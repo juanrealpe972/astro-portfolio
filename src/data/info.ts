@@ -1,7 +1,7 @@
 export const info = {
     name: "Juan Realpe",
     devdescription: "Desarrollador FullStack",
-    about: "Lo que puedas imaginar lo puedes hacer, me encanta aprender consas nuevas cada día",
+    about: "Todo lo que puedas imaginar, lo podrás hacer, Todo lo es posible...",
 
     socialMedia: {
         facebook: "https://www.facebook.com/juanrealpe972",
