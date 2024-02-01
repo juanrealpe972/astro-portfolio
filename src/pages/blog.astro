@@ -1,13 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Code from "../components/icons/Code.astro";
 ---
 
 <Layout title="Blog | Juan Realpe - Portfolio">
-    <section class="flex justify-center w-full">
-        <div class="w-[900px] bg-white dark:bg-dark-gray">
-            <h1 class="leading-relaxed">Proyectos</h1>
-            <p class="text-light dark:text-dark">
-                ¡Hey!¿Que tal? estos son mis proyectos como desarrollador,
+    <section class="flex justify-center w-full my-8">
+        <div class="w-[900px] dark:bg-bluedev">
+            <h1
+                class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-2 text-4xl font-bold"
+            >
+                <Code /> Proyectos
+            </h1>
+            <p class="text-gray-500 dark:text-gray-300 text-lg font-semibold">
+                ¡Hey! ¿Que tal? estos son mis proyectos como desarrollador,
                 checkea alguno
             </p>
         </div>

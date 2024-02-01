@@ -1,10 +1,35 @@
 ---
 import { IAboutProps } from "../../types/index";
-const { name, about } = Astro.props as IAboutProps;
+import { info } from "../../data/info";
+import User from "../icons/User.astro";
+import Books from "@components/icons/Books.astro";
 ---
 
-<section class="mx-10">
-    <p class="dark:text-light mt-[117px]">Hey,soy</p>
-    <h1>{name}</h1>
-    <p class="dark:text-light text-lg mb-16">{about}</p>
+<section class="flex flex-col lg:pt-10 pb-14">
+    <div class="grid grid-cols-2">
+        <div class="flex justify-center mb-10">
+            <img class="size-80 rounded-3xl border-t-2 border-orangedev shadow-2xl" src="juanrider.png" alt="Yop riderdev" />
+        </div>
+        <div class="mr-8">
+            <p class="text-bluedev dark:text-whitedev font-semibold text-5xl mt-14 mb-8">
+                ¡Hey👋!, Soy <label class="text-orangedev">{info.name}</label>
+            </p>
+            <h1 class="dark:text-whitedev text-slate-600 text-lg font-medium my-2">{info.description}.</h1>
+            <p class="dark:text-whitedev text-slate-600 text-lg font-medium">{info.about}</p>
+        </div>
+    </div>
+    <div class="mx-24">
+        <h2
+            class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold"
+        >
+            <User /> About
+        </h2>
+        <p class="text-bluedev dark:text-gray-400">Hello word!</p>
+        <h2
+            class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold"
+        >
+            <Books /> Skills
+        </h2>
+        <p class="text-bluedev dark:text-gray-400">Hello word2</p>
+    </div>
 </section>
