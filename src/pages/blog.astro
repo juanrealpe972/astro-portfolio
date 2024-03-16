@@ -1,20 +1,74 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Code from "../components/icons/Code.astro";
+import User from "../components/icons/User.astro";
+import Books from "@components/icons/Books.astro";
 ---
 
 <Layout title="Blog | Juan Realpe - Portfolio">
-    <section class="flex justify-center w-full my-8">
-        <div class="w-[900px] dark:bg-bluedev">
-            <h1
-                class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-2 text-4xl font-bold"
-            >
-                <Code /> Proyectos
-            </h1>
-            <p class="text-gray-500 dark:text-gray-300 text-lg font-semibold">
-                ¡Hey! ¿Que tal? estos son mis proyectos como desarrollador,
-                checkea alguno
+  <section class="flex justify-center w-full my-8">
+    <div class="w-[900px] dark:bg-bluedev">
+      <div class="">
+        <h2
+          class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-bold"
+        >
+          <User /> About
+        </h2>
+        <p class="text-bluedev dark:text-gray-400">Hello word!</p>
+      </div>
+      <div>
+        <h2
+          class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-2 text-3xl font-bold"
+        >
+          <Code /> Project
+        </h2>
+        <p class="text-gray-500 dark:text-gray-300 text-lg font-semibold">
+          Estos son mis proyectos como desarrollador, checkea alguno
+        </p>
+      </div>
+      <div>
+        <h2
+          class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold"
+        >
+          <Books /> Skills
+        </h2>
+        <div class="bg-gray-800 text-white p-8">
+          <div class="grid gap-4 grid-cols-1">
+            <p class="font-bold">
+              const
+              <span class="text-orange-500 pl-2">lenguajes</span>
+              =
             </p>
+            <div class="bg-gray-800rounded-md">
+              <h3 class="text-lg font-semibold mb-1 text-white">FrontEnd:</h3>
+              <ul class="text-white">
+                <li>js: ["React", "Astro"]</li>
+                <li>css: ["SASS", "Tailwind", "Bootstrap", "datatable"]</li>
+              </ul>
+            </div>
+            <div class="bg-gray-800 rounded-md">
+              <h3 class="text-lg font-semibold mb-1 text-white">BackEnd:</h3>
+              <ul class="text-white">
+                <li>PHP: ["Laravel"]</li>
+                <li>JavaScript: ["NodeJS", "Express"]</li>
+                <li>Python: ["Django"]</li>
+              </ul>
+            </div>
+            <div class="">
+              <p class="text-xl font-bold mb-2 text-white">
+                DataBases:
+                <span>["MySQL", "SQLServer", "NoSQL", "SQLite"]</span>
+              </p>
+            </div>
+            <div class="flex">
+              <p class="text-xl font-bold mb-2 text-white">
+                Movil:
+                <span>js: ["React-native"]</span>
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </Layout>

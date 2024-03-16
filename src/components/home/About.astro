@@ -1,19 +1,16 @@
 ---
-import { IAboutProps } from "../../types/index";
 import { info } from "../../data/info";
-import User from "../icons/User.astro";
 import GitHub from "../icons/GitHub.astro";
-import Books from "@components/icons/Books.astro";
 import Instagram from "@components/icons/Instagram.astro";
 import Linkedin from "@components/icons/Linkedin.astro";
 ---
 
 <section class="flex flex-col lg:pt-10 pb-14">
     <div class="grid grid-cols-2">
-        <div class="flex justify-center mb-10">
+        <div class="flex justify-center ">
             <img
                 class="size-80 rounded-3xl border-t-2 border-orangedev shadow-2xl"
-                src="juanrider.png"
+                src="yop1.png"
                 alt="Yop riderdev"
             />
         </div>
@@ -21,7 +18,7 @@ import Linkedin from "@components/icons/Linkedin.astro";
             <p
                 class="text-bluedev dark:text-whitedev font-semibold text-5xl mt-12 mb-8"
             >
-                ¡Hey👋!, Soy <label class="text-orangedev">{info.name}</label>
+                ¡Hey👋! Soy <label class="text-orangedev">{info.name}</label>
             </p>
             <h1
                 class="dark:text-gray-300 text-slate-600 text-lg font-medium my-2"
@@ -33,39 +30,26 @@ import Linkedin from "@components/icons/Linkedin.astro";
             </p>
             <div class="flex gap-x-5 mt-4">
                 <a
-                    href="http://github.com/juanrealpe972/"
-                    class="p-2 border-2 rounded-xl text-whitedev border-whitedev hover:text-orangedev hover:border-orangedev"
+                    href={info.socialMedia.github}
+                    class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
                     target="_blank"
                 >
                     <GitHub />
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/juan-camilo-realpe-ceron-9a271526a/"
-                    class="p-2 border-2 rounded-xl text-whitedev border-whitedev hover:text-orangedev hover:border-orangedev"
+                    href={info.socialMedia.linkedin}
+                    class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
                     target="_blank"
                     ><Linkedin />
                 </a>
                 <a
-                    href="http://instagram.com/juanca_realpe"
-                    class="p-2 border-2 rounded-xl text-whitedev border-whitedev hover:text-orangedev hover:border-orangedev"
+                    href={info.socialMedia.instagram}
+                    class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
                     target="_blank"
                     ><Instagram />
                 </a>
             </div>
         </div>
     </div>
-    <div class="mx-2">
-        <h2
-            class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold"
-        >
-            <User /> About
-        </h2>
-        <p class="text-bluedev dark:text-gray-400">Hello word!</p>
-        <h2
-            class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold"
-        >
-            <Books /> Skills
-        </h2>
-        <p class="text-bluedev dark:text-gray-400">Hello word2</p>
-    </div>
+
 </section>
