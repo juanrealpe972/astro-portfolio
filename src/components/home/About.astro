@@ -6,7 +6,7 @@ import Linkedin from "@components/icons/Linkedin.astro";
 ---
 
 <section class="flex flex-col lg:pt-10 pb-14">
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 mr-9">
         <div class="flex justify-center ">
             <img
                 class="size-80 rounded-3xl border-t-2 border-orangedev shadow-2xl"
@@ -14,7 +14,7 @@ import Linkedin from "@components/icons/Linkedin.astro";
                 alt="Yop riderdev"
             />
         </div>
-        <div class="mr-8">
+        <div>
             <p
                 class="text-bluedev dark:text-whitedev font-semibold text-5xl mt-12 mb-8"
             >
@@ -25,7 +25,7 @@ import Linkedin from "@components/icons/Linkedin.astro";
             >
                 {info.description}.
             </h1>
-            <p class="dark:text-gray-300 text-slate-600 text-lg font-medium">
+            <p class="dark:text-gray-300 text-slate-600 font-medium">
                 {info.about}
             </p>
             <div class="flex gap-x-5 mt-4">
@@ -51,5 +51,4 @@ import Linkedin from "@components/icons/Linkedin.astro";
             </div>
         </div>
     </div>
-
 </section>
