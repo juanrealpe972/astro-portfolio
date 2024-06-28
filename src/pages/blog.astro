@@ -15,18 +15,22 @@ import Books from "@components/icons/Books.astro";
           <User /> About
         </h2>
         <p class="text-bluedev dark:text-gray-400">
-          Soy un entusiasta de las motocicletas y de explorar el mundo sobre dos
-          ruedas, con habilidades pedagógicas heredadas de mi familia de
-          educadores. Mi pasión por aprender y ayudar a los demás me define. Soy
-          un Desarrollador Web Creativo, con más de 1 año de experiencia, me
-          enfoco en crear soluciones digitales atractivas y funcionales.
-          Disfruto del trabajo en equipo en proyectos desafiantes. Mi objetivo
-          es convertir información en conocimiento a través de proyectos de
-          unicos, manteniendo un compromiso constante con mi crecimiento en el
-          desarrollo web.
+          Soy un estudiante apasionado por el análisis y desarrollo de software,
+          con un fuerte deseo de aprender y dominar nuevas tecnologías. Mis
+          habilidades incluyen HTML, CSS, JavaScript, y frameworks como React y
+          Astro, así como CSS con TailwindCSS, Bootstrap, y Datatables. Tengo
+          experiencia en desarrollo backend con PHP y Laravel, JavaScript con
+          NodeJS y Express, y en bases de datos tanto relacionales como MySQL y
+          NoSQL. Además, cuento con habilidades en diseño de interfaces de
+          usuario intuitivas y responsivas, optimización del rendimiento de
+          aplicaciones web, integración de APIs y servicios externos, control de
+          versiones con Git y desarrollo de aplicaciones fullStack. Mi enfoque
+          se centra en la creación de soluciones eficientes y escalables, y
+          siempre busco nuevas oportunidades para expandir mis conocimientos y
+          habilidades en el campo del desarrollo de software.
         </p>
       </div>
-      <div>
+      <!-- <div>
         <h2
           class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-2 text-3xl font-bold"
         >
@@ -35,47 +39,100 @@ import Books from "@components/icons/Books.astro";
         <p class="text-gray-500 dark:text-gray-300 text-lg font-semibold">
           Estos son mis proyectos como desarrollador, checkea alguno
         </p>
-      </div>
+      </div> -->
       <div>
         <h2
           class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold"
         >
-          <Books /> Skills
+          <span>📚</span> Skills
         </h2>
-        <div class="bg-gray-800 text-white p-8">
+        <div class="bg-gray-800 text-white p-8 rounded-md">
           <div class="grid grid-cols-1">
-            <p class="font-bold">
-              const
-              <span class="text-orange-500 pl-2">lenguajes</span>
-              =
+            <p>
+              <span class="text-orange-500">const</span>
+              aboutMe
+              <span class="text-[#79C0FF]"> = </span>
               {"{"}
             </p>
-            <div class="bg-gray-800 rounded-md pl-4">
-              <h3 class="text-lg font-semibold text-white">FrontEnd: {'{'}</h3>
-              <ul class="text-white">
-                <li>js: ["React", "Astro"]</li>
-                <li>css: ["SASS", "Tailwind", "Bootstrap", "datatable"]</li>
-              </ul>
-              {'},'}
+            <div class="rounded-md pl-4">
+              <p>
+                <span class="text-[#79C0FF]"> code </span>
+                : [
+                <span class="text-[#A5D6FF]"> "HTML" </span>,
+                <span class="text-[#A5D6FF]"> "CSS" </span>,
+                <span class="text-[#A5D6FF]"> "JavaScript" </span>,
+                <span class="text-[#A5D6FF]"> "PHP" </span>,
+                <span class="text-[#A5D6FF]"> "Python" </span>
+                ],
+              </p>
             </div>
-            <div class="bg-gray-800 rounded-md pl-4">
-              <h3 class="text-lg font-semibold text-white">BackEnd: {'{'}</h3>
-              <ul class="text-white">
-                <li>PHP: ["Laravel"]</li>
-                <li>JavaScript: ["NodeJS", "Express"]</li>
-                <li>Python: ["Django"]</li>
-              </ul>
-              {'},'}
+            <div class="rounded-md pl-4">
+              <p></p>
+              <span class="text-[#79C0FF]"> technologies</span>{": {"}
+              <div class="rounded-md pl-5">
+                <span class="text-[#79C0FF]"> FrontEnd</span>{": {"}
+                <ul class="text-white pl-6">
+                  <li>
+                    <span class="text-[#79C0FF]"> js</span>
+                    : [
+                    <span class="text-[#A5D6FF]"> "React" </span>,
+                    <span class="text-[#A5D6FF]"> "Astro" </span>
+                    ]
+                  </li>
+                  <li>
+                    <span class="text-[#79C0FF]"> css</span>
+                    : [
+                    <span class="text-[#A5D6FF]"> "Tailwind" </span>,
+                    <span class="text-[#A5D6FF]"> "Bootstrap" </span>
+                    ]
+                  </li>
+                </ul>
+                {"},"}
+              </div>
+              <div class="rounded-md pl-5">
+                <span class="text-[#79C0FF]"> BackEnd</span>{": {"}
+                <ul class="text-white pl-6">
+                  <li>
+                    <span class="text-[#79C0FF]"> php</span>
+                    : [
+                    <span class="text-[#A5D6FF]"> "Laravel" </span>
+                    ]
+                  </li>
+                  <li>
+                    <span class="text-[#79C0FF]"> js</span>
+                    : [
+                    <span class="text-[#A5D6FF]"> "NodeJS" </span>,
+                    <span class="text-[#A5D6FF]"> "Express" </span>,
+                    <span class="text-[#A5D6FF]"> "Prisma" </span>
+                    ]
+                  </li>
+                  <li>
+                    <span class="text-[#79C0FF]"> python</span>
+                    : [
+                    <span class="text-[#A5D6FF]"> "Django" </span>
+                    ]
+                  </li>
+                </ul>
+                {"},"}
+              </div>
+              <div class="rounded-md pl-4 flex items-center">
+                <span class="text-[#79C0FF]"> DataBases</span>
+                :[
+                <p class="text-white">
+                  <span class="text-[#A5D6FF]"> "MySQL" </span>,
+                  <span class="text-[#A5D6FF]"> "NoSQL" </span>
+                </p>
+                ]
+              </div>
+              <p>{"},"}</p>
             </div>
-            <div class="bg-gray-800 rounded-md pl-4 flex items-center">
-              <h3 class="text-lg font-semibold text-white mr-2">DataBases: {'{'}</h3>
-              <p class="text-white">["MySQL", "NoSQL", "SQLite"]</p>
-              {'},'}
-            </div>
-            <div class="bg-gray-800 rounded-md pl-4 flex items-center">
-              <h3 class="text-lg font-semibold text-white mr-2">Movil: {'{'}</h3>
-              <p class="text-white">js: ["React-native"]</p>
-              {'},'}
+            <div class="rounded-md pl-4">
+              <p>
+                <span class="text-[#79C0FF]"> currentOccupation</span>
+                [
+                <span class="text-[#A5D6FF]"> "Estudiante de Análisis y Desarrollo de Software, y Desarrollador FullStack" </span>
+                ]
+              </p>
             </div>
             {"}"}
           </div>
