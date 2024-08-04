@@ -1,5 +1,5 @@
 export const info = {
-    name: "Juanca Realpe",
+    name: "Juan",
     description: "Desarrollador FullStack",
     about: "Todo lo que puedas imaginar, tienes el poder y la capacidad para convertirlo en realidad.",
 
@@ -10,5 +10,4 @@ export const info = {
         email: "mailto:juanrealpe972@gmail.com",
         linkedin: "https://www.linkedin.com/in/juanrealpe972/"
     }
-
 }
