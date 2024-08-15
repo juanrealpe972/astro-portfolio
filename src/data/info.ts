@@ -16,6 +16,6 @@ export const info = {
         facebook: "https://www.facebook.com/juanrealpe972",
         github: "https://github.com/juanrealpe972",
         email: "mailto:juanrealpe972@gmail.com",
-        linkedin: "https://www.linkedin.com/in/juanrealpe972/"
+        linkedin: "https://www.linkedin.com/in/juan-camilo-realpe-ceron-9a271526a/"
     }
 }
