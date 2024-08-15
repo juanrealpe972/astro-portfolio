@@ -5,42 +5,82 @@ import Instagram from "@components/icons/Instagram.astro";
 import Linkedin from "@components/icons/Linkedin.astro";
 ---
 
-<section class="flex flex-col lg:pt-10 px-4">
-    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
-        <div class="flex justify-center mb-8 lg:mb-0">
-            <img
-                class="w-80 h-80 lg:mt-0 mt-16 rounded-3xl border-t-2 border-orangedev shadow-2xl object-cover"
-                src="yop2.png"
-                alt="Yop riderdev"
-            />
-        </div>
-        <div class="text-center lg:text-left">
-            <p class="text-bluedev dark:text-whitedev font-semibold text-3xl lg:text-5xl mt-4 lg:mt-12 mb-4 lg:mb-8">¡Hey👋! Soy <label class="text-orangedev">{info.name}</label></p>
-            <h1 class="dark:text-gray-300 text-slate-600 text-base lg:text-lg font-medium my-2">{info.description}.</h1>
-            <p class="dark:text-gray-300 text-slate-600 font-medium">{info.about}</p>
-            <div class="flex justify-center lg:justify-start gap-x-5 mt-4">
-                <a
-                    href={info.socialMedia.github}
-                    class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
-                    target="_blank"
-                >
-                    <GitHub />
-                </a>
-                <a
-                    href={info.socialMedia.linkedin}
-                    class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
-                    target="_blank"
-                >
-                    <Linkedin />
-                </a>
-                <a
-                    href={info.socialMedia.instagram}
-                    class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
-                    target="_blank"
-                >
-                    <Instagram />
-                </a>
-            </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    
+    .animate-gradient-text {
+        background: linear-gradient( 90deg,#e89551, #ff5733, #ffc300, #28b463, #8e44ad, #3498db, #1abc9c, #e74c3c, #9b59b6, #2ecc71, #f39c12, #e67e22, #e74c3c, #ecf0f1, #bdc3c7, #95a5a6, #7f8c8d, #34495e, #2c3e50, #16a085 );
+        background-size: 600%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradientMove 40s ease-in-out infinite;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    @keyframes gradientMove {
+        0% {
+            background-position: 0%;
+        }
+        50% {
+            background-position: 100%;
+        }
+        100% {
+            background-position: 0%;
+        }
+    }
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (min-width: 1024px) {
+        .profile-section {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+</style>
+
+<section class="profile-section gap-x-12">
+    <div class="flex justify-center">
+        <img
+            class="w-80 h-80 lg:mt-0 mt-16 rounded-3xl border-t-2 border-orangedev shadow-2xl object-cover"
+            src="yop2.png"
+            alt="Yop riderdev"
+        />
+    </div>
+    <div class="text-center lg:text-left">
+        <p class="font-semibold text-3xl lg:text-8xl mb-5 animate-gradient-text">
+            {info.name}
+        </p>
+        <h1 class="dark:text-gray-300 text-slate-600 text-base lg:text-lg font-medium">
+            {info.description}
+        </h1>
+        <p class="dark:text-gray-300 text-slate-600 font-medium">{info.about}</p>
+        <div class="flex justify-center lg:justify-start gap-x-5 mt-4">
+            <a
+                href={info.socialMedia.github}
+                class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
+                target="_blank"
+            >
+                <GitHub />
+            </a>
+            <a
+                href={info.socialMedia.linkedin}
+                class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
+                target="_blank"
+            >
+                <Linkedin />
+            </a>
+            <a
+                href={info.socialMedia.instagram}
+                class="p-2 border-2 rounded-xl text-gray-600 border-gray-400 dark:text-gray-200 dark:border-whitedev hover:text-orangedev hover:border-orangedev dark:hover:text-orangedev dark:hover:border-orangedev ease-in duration-200"
+                target="_blank"
+            >
+                <Instagram />
+            </a>
         </div>
     </div>
 </section>

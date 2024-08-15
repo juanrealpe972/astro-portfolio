@@ -3,24 +3,23 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Blog | Juan Realpe - Portfolio">
-  <section class="flex justify-center w-full mt-16 my-8">
-    <div class="w-full max-w-screen-lg p-4">
-      <div class="mb-8">
-        <h2 class="flex items-center gap-x-6 text-3xl font-bold leading-relaxed text-bluedev dark:text-whitedev">
-          🧍 About
+  <section class="flex justify-center w-full mt-8 sm:mt-16 my-4 sm:my-8 p-4">
+    <div class="w-full max-w-screen-lg">
+      <div class="mb-6 sm:mb-8">
+        <h2 class="flex items-center gap-x-4 sm:gap-x-6 text-2xl sm:text-3xl font-bold leading-relaxed text-bluedev dark:text-whitedev">
+          🧍 Sobre mi
         </h2>
-        <p class="mt-4 text-lg text-bluedev dark:text-gray-400">
-          Mi nombre es Juan Camilo Realpe y soy un estudiante de análisis y desarrollo de software con un fuerte deseo de aprender y dominar nuevas tecnologías. Mis habilidades incluyen HTML, CSS, JavaScript y frameworks como React y Astro, así como CSS con TailwindCSS, Bootstrap y Datatables. Tengo experiencia en desarrollo backend con PHP y Laravel, JavaScript con NodeJS y Express, y en bases de datos tanto relacionales como no relacionales, manejando MySQL y NoSQL.
-
+        <p class="mt-3 sm:mt-4 text-base sm:text-lg text-bluedev dark:text-gray-400">
+          Mi nombre es Juan Camilo Realpe y soy un estudiante de análisis y desarrollo de software con un fuerte deseo de aprender y dominar nuevas tecnologías. Mis habilidades incluyen HTML, CSS, JavaScript y frameworks como React y Astro, así como CSS con TailwindCSS, Bootstrap y Datatables. Tengo experiencia en desarrollo backend con PHP y Laravel, JavaScript con NodeJS y Express, y en bases de datos tanto relacionales como no relacionales.
           Además, cuento con habilidades en diseño de interfaces de usuario intuitivas y responsivas, optimización del rendimiento de aplicaciones web, integración de APIs y servicios externos, control de versiones con Git y desarrollo de aplicaciones full stack. Mi enfoque se centra en la creación de soluciones eficientes y escalables, y siempre busco nuevas oportunidades para expandir mis conocimientos y habilidades en el campo del desarrollo de software.
         </p>
       </div>
       <div>
-        <h2 class="items-center leading-relaxed text-bluedev dark:text-whitedev flex gap-x-6 text-3xl font-semibold">
-          <span>📚</span>Skills
+        <h2 class="flex items-center gap-x-4 sm:gap-x-6 text-2xl sm:text-3xl font-semibold leading-relaxed text-bluedev dark:text-whitedev">
+          <span>📚</span>Habilidades
         </h2>
-        <div class="bg-gray-800 text-white p-8 rounded-md">
-          <div class="grid grid-cols-1">
+        <div class="bg-gray-800 text-white p-6 sm:p-8 rounded-md mt-4">
+          <div class="grid grid-cols-1 text-sm sm:text-base">
             <p>
               <span class="text-orange-500">const</span>
               aboutMe
@@ -40,11 +39,10 @@ import Layout from "../layouts/Layout.astro";
               </p>
             </div>
             <div class="rounded-md pl-4">
-              <p></p>
               <span class="text-[#79C0FF]"> technologies</span>{": {"}
-              <div class="rounded-md pl-5">
+              <div class="rounded-md pl-4">
                 <span class="text-[#79C0FF]"> FrontEnd</span>{": {"}
-                <ul class="text-white pl-6">
+                <ul class="text-white pl-4">
                   <li>
                     <span class="text-[#79C0FF]"> js</span>
                     : [
@@ -62,9 +60,9 @@ import Layout from "../layouts/Layout.astro";
                 </ul>
                 {"},"}
               </div>
-              <div class="rounded-md pl-5">
+              <div class="rounded-md pl-4">
                 <span class="text-[#79C0FF]"> BackEnd</span>{": {"}
-                <ul class="text-white pl-6">
+                <ul class="text-white pl-4">
                   <li>
                     <span class="text-[#79C0FF]"> php</span>
                     : [

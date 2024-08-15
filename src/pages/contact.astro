@@ -1,52 +1,48 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Contacto | Juan Realpe - Portfolio">
   <section class="flex items-center justify-center min-h-screen p-4">
     <div class="mx-auto max-w-screen-lg">
-      <h2 class="mb-5 text-4xl sm:text-5xl tracking-tight font-extrabold text-center text-orangedev">Contacto</h2>
-      <p class="font-normal text-center text-slate-500 text-lg sm:text-xl dark:text-gray-300">Estoy aquí para ayudar👋.</p>
-      <div class="flex flex-col lg:flex-row justify-center pt-8 space-y-8 lg:space-y-0">
+      <h2 class="mb-6 text-3xl sm:text-4xl md:text-5xl tracking-tight font-extrabold text-center text-orangedev">Contacto</h2>
+      <p class="font-normal text-center text-slate-500 text-base sm:text-lg md:text-xl dark:text-gray-300">Estoy aquí para ayudar👋.</p>
+      <div class="flex flex-col lg:flex-row justify-center pt-6 lg:pt-8 space-y-6 lg:space-y-0 lg:space-x-8">
         <div class="w-full lg:w-1/2 p-4">
-          <h3 class="text-bluedev lg:text-left text-center text-2xl mb-2 font-bold dark:text-whitedev">Contacta conmigo</h3>
-          <p class="text-lg text-slate-500 lg:text-left text-center dark:text-gray-300">¿Qué tal? Llena el formulario y te contactaré lo más pronto posible.</p>
+          <h3 class="text-bluedev text-center lg:text-left text-xl sm:text-2xl mb-4 font-bold dark:text-whitedev">Contacta conmigo</h3>
+          <p class="text-base sm:text-lg text-slate-500 text-center lg:text-left dark:text-gray-300">¿Qué tal? Llena el formulario y te contactaré lo más pronto posible.</p>
           <img src="form.png" alt="Formulario" class="mt-4 mx-auto max-w-full h-auto">
         </div>
         <div class="w-full lg:w-1/2 p-4">
-          <form action="#" class="space-y-6">
-            <div>
-              <input
-                type="text"
-                id="name_full"
-                class="p-3 pl-4 w-full border-gray text-bluedev rounded-lg focus:outline-none focus:border-orangedev border-2 shadow-inherit dark:bg-custom-gradient dark:placeholder-gray-300 dark:text-whitedev"
-                placeholder="Nombre Completo"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                class="p-3 pl-4 w-full border-gray text-bluedev rounded-lg focus:outline-none focus:border-orangedev border-2 shadow-inherit dark:bg-custom-gradient dark:placeholder-gray-300 dark:text-whitedev"
-                placeholder="Dirección De Correo Electrónico"
-                required
-              />
-            </div>
-            <div>
-              <textarea
-                id="message"
-                rows="4"
-                class="p-3 pl-4 w-full border-gray text-bluedev rounded-lg focus:outline-none focus:border-orangedev border-2 shadow-inherit dark:bg-custom-gradient dark:placeholder-gray-300 dark:text-whitedev"
-                placeholder="Tu Mensaje."
-                required
-              ></textarea>
-            </div>
+          <form action="#" class="space-y-4 sm:space-y-6">
+            <input
+              type="text"
+              id="name_full"
+              class="p-3 pl-4 w-full border-gray text-bluedev rounded-lg focus:outline-none focus:border-orangedev border-2 shadow-inherit dark:bg-[#04080e] dark:placeholder-gray-300 dark:text-whitedev"
+              placeholder="Nombre Completo"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              class="p-3 pl-4 w-full border-gray text-bluedev rounded-lg focus:outline-none focus:border-orangedev border-2 shadow-inherit dark:bg-[#04080e] dark:placeholder-gray-300 dark:text-whitedev"
+              placeholder="Dirección De Correo Electrónico"
+              required
+              autocomplete="off"
+            />
+            <textarea
+              id="message"
+              rows="4"
+              class="p-3 pl-4 w-full border-gray text-bluedev rounded-lg focus:outline-none focus:border-orangedev border-2 shadow-inherit dark:bg-[#04080e] dark:placeholder-gray-300 dark:text-whitedev"
+              placeholder="Tu Mensaje."
+              required
+            ></textarea>
             <button
               type="submit"
-              class="py-3 px-5 text-sm w-full font-medium text-center text-whitedev rounded-lg shadow-inherit bg-black hover:bg-orangedev focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-300 dark:text-bluedev dark:hover:bg-orangedev dark:focus:ring-gray-300"
-              >Enviar mensaje</button
+              class="py-3 px-5 text-sm w-full font-medium text-center text-whitedev rounded-lg shadow-inherit bg-black hover:bg-orangedev focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-300 dark:text-bluedev dark:hover:bg-orangedev dark:focus:ring-gray-300 transition-all duration-300 ease-in-out"
             >
+              Enviar mensaje
+            </button>
           </form>
         </div>
       </div>
