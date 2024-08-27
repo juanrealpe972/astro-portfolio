@@ -1,12 +1,10 @@
 ---
-import { info } from "../data/info";
-
 import Layout from "../layouts/Layout.astro";
 import About from "../components/home/About.astro";
 ---
 
 <Layout title="Portfolio | Juan Realpe">
 	<main class="lg:pt-6 pb-14 mx-auto max-w-screen-xl">
-		<About name={info.name} about={info.about} />
+		<About/>
 	</main>	
 </Layout>
