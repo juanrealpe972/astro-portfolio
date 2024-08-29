@@ -6,8 +6,8 @@ import Layout from "../layouts/Layout.astro";
   <section class="flex justify-center w-full mt-8 sm:mt-16 my-4 sm:my-8 p-4">
     <div class="w-full max-w-screen-lg">
       <div class="mb-6 sm:mb-8">
-        <h2 class="flex items-center gap-x-4 sm:gap-x-6 text-2xl sm:text-3xl font-bold leading-relaxed text-bluedev dark:text-whitedev">
-          🧍 Sobre mi
+        <h2 class="flex items-center gap-x-0 sm:gap-x-0 text-2xl sm:text-3xl font-semibold leading-relaxed text-bluedev dark:text-whitedev">
+          <span>🧍</span>{'<'}Sobre mi{'/>'}
         </h2>
         <p class="mt-3 sm:mt-4 text-base sm:text-lg text-bluedev dark:text-gray-400">
           Mi nombre es Juan Camilo Realpe y soy un estudiante de análisis y desarrollo de software con un fuerte deseo de aprender y dominar nuevas tecnologías. Mis habilidades incluyen HTML, CSS, JavaScript y frameworks como React y Astro, así como CSS con TailwindCSS, Bootstrap y Datatables. Tengo experiencia en desarrollo backend con PHP y Laravel, JavaScript con NodeJS y Express, y en bases de datos tanto relacionales como no relacionales.
@@ -15,8 +15,8 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <div>
-        <h2 class="flex items-center gap-x-4 sm:gap-x-6 text-2xl sm:text-3xl font-semibold leading-relaxed text-bluedev dark:text-whitedev">
-          <span>📚</span>Habilidades
+        <h2 class="flex items-center gap-x-1 sm:gap-x-1 text-2xl sm:text-3xl font-semibold leading-relaxed text-bluedev dark:text-whitedev">
+          <span>📚</span>{'<'}Habilidades{'/>'}
         </h2>
         <div class="bg-gray-800 text-white p-6 sm:p-8 rounded-md mt-4">
           <div class="grid grid-cols-1 text-sm sm:text-base">
@@ -111,49 +111,59 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div class="mt-8">
-        <h2 class="flex items-center gap-x-4 sm:gap-x-6 text-2xl sm:text-3xl font-semibold leading-relaxed text-bluedev dark:text-whitedev">
-          <span>🚀</span> Proyectos
+        <h2 class="flex items-center gap-x-1 sm:gap-x-1 text-2xl sm:text-3xl font-semibold leading-relaxed text-bluedev dark:text-whitedev">
+          <span>🚀</span>{'<'}Proyectos{'/>'}
         </h2>
-        <div class="grid grid-cols-1 gap-6 mt-6">
-          <div class="bg-gray-800 text-white rounded-lg overflow-hidden shadow-lg flex flex-col sm:flex-row transform hover:scale-105 transition-transform duration-300">
-            <img src="https://source.unsplash.com/random/400x300?project" alt="TaskTrack" class="w-full sm:w-1/3 h-40 object-cover">
-            <div class="p-4 flex flex-col justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-1 gap-6 mt-6">
+          <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6">
+            <div class="w-full sm:w-1/2 h-full flex justify-center items-center">
+              <img src="../../public/Macbook-Air-Sin_fondo.png" alt="TaskTrack" class="w-96 h-auto object-cover rounded-lg">
+            </div>
+            <div class="p-4 sm:p-0 flex flex-col justify-between sm:w-1/2">
               <div>
-                <h3 class="text-xl font-bold mb-2">TaskTrack</h3>
-                <p class="text-gray-400 mb-4">
-                  TaskTrack es una aplicación web diseñada para facilitar la gestión y organización de tareas. Permite a los usuarios crear, leer, actualizar y eliminar (CRUD) tareas de manera eficiente. Desarrollado con Django para la lógica del servidor y la gestión de datos, y Bootstrap para crear una interfaz de usuario atractiva y responsiva.
-                </p>
-              </div>
-              <div>
-                <h4 class="text-lg font-semibold text-neonblue mb-2">Tecnologías utilizadas:</h4>
-                <div class="flex flex-wrap gap-3">
-                  <div class="flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-3 py-1 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Django" class="w-5 h-5 mr-2">
+                <h3 class="text-3xl font-bold mb-2 text-bluedev dark:text-whitedev">TaskTrack</h3>
+                <div class="flex flex-wrap gap-2 mb-2">
+                  <div class="flex items-center bg-gradient-to-r from-slate-500 to-slate-800 text-white px-2 py-[2px] rounded-lg text-xs shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Django" class="w-4 h-4 mr-1">
                     Django
                   </div>
-                  <div class="flex items-center bg-gradient-to-r from-green-600 to-green-800 text-white px-3 py-1 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="w-5 h-5 mr-2">
+                  <div class="flex items-center bg-gradient-to-r from-green-500 to-green-800 text-white px-2 py-[2px] rounded-lg text-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="w-4 h-4 mr-1">
                     Python
                   </div>
-                  <div class="flex items-center bg-gradient-to-r from-purple-600 to-purple-800 text-white px-3 py-1 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" class="w-5 h-5 mr-2">
+                  <div class="flex items-center bg-gradient-to-r from-purple-500 to-purple-800 text-white px-2 py-[2px] rounded-lg text-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" class="w-4 h-4 mr-1">
                     Bootstrap
                   </div>
-                  <div class="flex items-center bg-gradient-to-r from-yellow-500 to-yellow-700 text-white px-3 py-1 rounded-lg text-sm font-medium shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="SQLite" class="w-5 h-5 mr-2">
+                  <div class="flex items-center bg-gradient-to-r from-yellow-500 to-yellow-700 text-white px-2 py-[2px] rounded-lg text-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="SQLite" class="w-4 h-4 mr-1">
                     SQLite
                   </div>
                 </div>
-                <div class="mt-4 flex gap-2">
-                  <a href="https://github.com/juanrealpe972/crud_django" class="text-white bg-neonblue hover:bg-blue-700 rounded-full px-4 py-2 transition-colors duration-300">GitHub</a>
-                  <a href="https://www.yoursite.com" class="text-white bg-neonblue hover:bg-blue-700 rounded-full px-4 py-2 transition-colors duration-300">Sitio Web</a>
+              </div>
+              <div>
+                <p class="text-gray-400 mb-4">
+                  TaskTrack es una aplicación web que facilita la gestión de tareas, permitiendo crear, leer, actualizar y eliminar tareas de manera eficiente. Desarrollada con Django para la lógica del servidor y Bootstrap para la interfaz de usuario.
+                </p>
+                <div class="mt-4 flex gap-4">
+                  <a href="https://github.com/juanrealpe972/crud_django" class="flex items-center px-4 py-2 bg-gray-800 text-white font-semibold border border-gray-600 rounded-lg shadow hover:bg-gray-900 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transform transition duration-150 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 .5a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.17c-3.34.73-4.04-1.6-4.04-1.6-.54-1.36-1.32-1.73-1.32-1.73-1.08-.74.08-.72.08-.72 1.19.09 1.82 1.22 1.82 1.22 1.06 1.81 2.78 1.29 3.46.99.11-.77.42-1.29.77-1.58-2.66-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.39 1.23-3.23-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.44 11.44 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.76.84 1.23 1.92 1.23 3.23 0 4.6-2.82 5.62-5.5 5.91.43.37.82 1.1.82 2.22v3.3c0 .32.22.69.82.58A12 12 0 0012 .5z"/>
+                    </svg>
+                    <span>Code</span>
+                  </a>
+                  <a href="https://task-track-drc2.onrender.com/" class="flex items-center px-4 py-2 bg-gray-800 text-white font-semibold border border-gray-600 rounded-lg shadow hover:bg-gray-900 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transform transition duration-150 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 4.5c-4.64 0-8.88 2.92-10.88 7.5 2 4.58 6.24 7.5 10.88 7.5s8.88-2.92 10.88-7.5c-2-4.58-6.24-7.5-10.88-7.5zm0 13c-3.33 0-6.42-1.89-8.38-5.5 1.96-3.61 5.05-5.5 8.38-5.5s6.42 1.89 8.38 5.5c-1.96 3.61-5.05 5.5-8.38 5.5zm0-9.5a4 4 0 100 8 4 4 0 000-8zm0 6a2 2 0 110-4 2 2 0 010 4z"/>
+                    </svg>
+                    <span>Preview</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
 
     </div>
   </section>

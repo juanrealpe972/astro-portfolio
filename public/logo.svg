@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Fondo de la sombra -->
+    <text x="50" y="160" font-family="Arial, sans-serif" font-size="180" fill="#E44D26" transform="translate(-15, 0) skewX(-10)">
+        J
+    </text>
+    <!-- Letra principal -->
+    <text x="50" y="160" font-family="Arial, sans-serif" font-size="180" fill="#EFEAD8">
+        J
+    </text>
+</svg>
